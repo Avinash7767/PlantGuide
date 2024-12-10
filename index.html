@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image for Analysis</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            color: #343a40; /* Dark text color */
+
+        }
+        .card {
+            margin: 100px auto; /* Center the card horizontally */
+            padding: 40px; /* Increase padding inside the card */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            max-width: 500px; /* Max width of the card */
+            background-color: #fff; /* White background for the card */
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .btn-primary {
+            width: 100%; /* Full-width button */
+            padding: 10px; /* Add padding for better look */
+            font-size: 16px; /* Font size for button */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="text-center">Upload an  plant Image </h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image">Select Image:</label>
+                <input type="file" name="image" id="image" class="form-control-file" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload and Analyze</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            color: #343a40; /* Dark text color */
+        }
+        .card {
+            margin-bottom: 20px; /* Space between cards */
+            padding: 15px; /* Padding inside the card */
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .card-header {
+            font-size: 20px; /* Header font size */
+            font-weight: bold;
+            background-color: #007bff; /* Blue background for header */
+            color: white; /* White text color */
+            border-radius: 8px 8px 0 0; /* Rounded corners on the top */
+        }
+        .btn-primary {
+            width: 100%; /* Full-width button */
+            padding: 10px; /* Add padding for better look */
+            font-size: 16px; /* Font size for button */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Analysis Result</h1>
+
+    <!-- Dynamically generated Bootstrap cards for each analysis result -->
+    <div class="response-cards">
+        {{ response|safe }} <!-- This will include card structures for each result -->
+    </div>
+
+    <a href="/" class="btn btn-primary mt-3">Upload Another Image</a>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
